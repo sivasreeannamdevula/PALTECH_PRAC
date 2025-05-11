@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+     function Click()
+     {
+        if(typeof(Storage)!==undefined)
+       {
+           if(localStorage.Nam)
+          {
+              localStorage.Nam="updated sree";
+              localStorage.removeItem("Nam")
+           }
+           else
+          {
+            localStorage.Nam="sree";
+          
+          }
+          document.getElementsByClassName("class")[0].innerHTML="Name is: "+localStorage.Nam ;
+      }
+      else
+      {
+        document.getElementsByClassName("class")[0].innerHTML="sry browser doesn't support";
+      }
+     }
+    </script>
+</head>
+<body>
+    <div class="class"></div>
+    <button onclick="Click()">Submit</button>
+</body>
+</html>
+
+
+
+<!-- //local storage 
+//session storage -->

@@ -1,0 +1,6 @@
+@pracAPI_HostAddress = http://localhost:5199
+
+GET {{pracAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

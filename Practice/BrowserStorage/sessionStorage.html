@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function ClickMe()
+        {
+            if(typeof(Storage)!==undefined)
+            {
+                if(sessionStorage.SessionName)
+                {
+                    sessionStorage.SessionName="updated session"
+                }
+                else
+                {
+                    sessionStorage.SessionName="news session";
+                }
+                document.getElementById("id").innerHTML="HEY WELCOME "+sessionStorage.SessionName;
+            }
+            else
+            {
+                document.getElementById("id").innerHTML="sorry browser doesn't support";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div id="id"></div>
+    <button onclick="ClickMe()"> Click me </button>
+</body>
+</html>

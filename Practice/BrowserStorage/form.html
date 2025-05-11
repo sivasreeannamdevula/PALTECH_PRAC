@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Clicking()
+        {
+            sessionStorage.Email=document.getElementById("email").value;
+            sessionStorage.pwd=document.getElementById("pwd").value;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <label for="email" >Email:</label>
+        <input id="email" type="text"/>
+        <br>
+        <br>
+        <label for="pwd">Password:</label>
+        <input id="pwd" type="password"/>
+        <button onclick="Clicking()">Submit</button>
+    </form>
+</body>
+</html>
