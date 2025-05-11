@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj1={
+            name:"sree",
+            age:20,
+            favsubject:"physics"
+        }
+
+        //accessing
+        //console.log(obj1["name"]);
+        //console.log(obj1.age);
+
+
+        //adding new properties to existing object
+        obj1.newProp="newProp";
+        //console.log(obj1.newProp);
+
+        //deleting exsiting properties
+        delete obj1.name;
+     
+        for(let [keys,values] of Object.entries(obj1))
+        {
+            console.log(keys + "and "+ values);
+        }
+
+        //nested objects
+        var obj2={
+            name:"ss",
+            age:23,
+            firstname:"sree",
+            innerobj:{
+                inner1:"inner1",
+                inner2:"inner2",
+                inner3:"innner3"
+            }
+        }
+        console.log(obj2.innerobj.inner2);
+        console.log(obj2["innerobj"]["inner1"]);
+        
+    </script>
+</body>
+</html>

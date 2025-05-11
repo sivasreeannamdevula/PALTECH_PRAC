@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+           background-color: antiquewhite;
+           padding:2px;
+           margin:2px;
+           border:2px solid black;
+           display:flex;
+           flex-direction:row;
+           height:500px;
+           /* flex-direction:row-reverse;
+           flex-direction:column;
+           flex-direction:column-reverse; */
+
+           /* flex-wrap:nowrap; */
+           flex-wrap: wrap;
+           /* flex-wrap: wrap-reverse; */
+
+           /* shorthand notation */
+           /* flex-flow: row wrap; */
+
+           /* justify-content: center; */
+           /* justify-content: start; */
+           /* justify-content: end; */
+            /* justify-content: space-around; */
+           /* justify-content: space-evenly;   */
+           /* justify-content: space-between; */
+
+           /* align-items: start;
+           align-items: center;
+           align-items: end;
+           align-items: stretch; */
+
+           /* wrap chesinappudu madhyalo line ki line vachey gap ni minimise cheyyadaniki align-content ; */
+           /* align-content: start;
+           align-content: end;
+           align-content: center; */
+
+
+        }
+
+        #box1
+        {
+           background-color: yellow;
+           padding:2px;
+           margin:2px;
+           height:100px;
+           width:100px; 
+           flex-shrink: 4 ;
+           /* at first the whole row space is occupied when flex-grow is set */
+           /* flex-grow: 7; */
+           /* used to set the flex item width */
+           /* flex-basis:10px; */
+           align-self:center;
+           align-self:end;
+        }
+
+        #box2
+        {
+           background-color: orange;
+           padding:2px;
+           margin:2px;
+           height:100px;
+           width:100px; 
+            /* comes last if +ve */
+           order:40;
+        }
+
+        #box3
+        {
+           background-color: green;
+           padding:2px;
+           margin:2px;
+           height:100px;
+           width:100px;
+          
+        }
+
+        #box4
+        {
+           background-color: blue;
+           padding:2px;
+           margin:2px;
+           height:100px;
+           width:100px;
+           /* comes first if -ve */
+           order:-1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">BOX 1</div>
+        <div class="box" id="box2">BOX 2</div>
+        <div class="box" id="box3">BOX 3</div>
+        <div class="box" id="box4">BOX 4</div>
+    </div>
+</body>
+</html>
+
+
+<!-- to center the element both vertically and horizontally use justify,align together -->

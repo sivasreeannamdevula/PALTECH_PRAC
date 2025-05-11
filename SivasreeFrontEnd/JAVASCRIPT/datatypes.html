@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DATA TYPES</h1>
+    <p class="demo"></p>
+    <script>
+        //strings
+        let x1="sivasree";
+        let x2='sivasree2';
+        let x3='hey you!"me"';
+        let x4="hey's";
+     
+
+
+        // numbers--everything is a 64-bit double
+        let y=1567;       //1567.000
+        let y2=12e4;
+        let y3=23e-8;
+
+
+        //bigint
+        let b=BigInt("2435678908765435678908765435678");
+
+        // booleans
+        let z=true;
+        let z2=false;
+
+        //When adding a number and a string, JavaScript will treat the number as a string.
+        let p=16 + "sree";
+       
+        //as js evaluation of expressions is from left to right,first 16,4 are treated as numbers and there are added later 
+        //when number , string are added js treats number as string and concatenates
+        let q=16 + 4+ "paltech";
+        
+        //here at first itself paltech is treated as string and then consequently 16,4 are also treated as strings
+        let r="paltech" + 16 + 4;
+
+
+        //objects
+        //1.arrays  0-indexed
+        const arr=["sree0","sree1","sree2"];
+        //2.date
+        const datetoday=new Date("01-12-2025");
+        //object
+        const person={
+                       name:"sivasreeobject",
+                       age:12,
+                       gender:"male"
+                     }
+
+
+                     
+        // document.getElementsByClassName("demo")[0].innerHTML=x;
+        // document.getElementsByClassName("demo")[0].innerHTML=y;
+        // document.getElementsByClassName("demo")[0].innerHTML=z;
+        // document.getElementsByClassName("demo")[0].innerHTML=p;
+        // document.getElementsByClassName("demo")[0].innerHTML=q;
+        // document.getElementsByClassName("demo")[0].innerHTML=r;
+        // document.getElementsByClassName("demo")[0].innerHTML=x4;
+        // document.getElementsByClassName("demo")[0].innerHTML=b;
+        // document.getElementsByClassName("demo")[0].innerHTML=arr[0];
+        // document.getElementsByClassName("demo")[0].innerHTML=person.name;
+        // document.getElementsByClassName("demo")[0].innerHTML=datetoday;
+        let c=undefined;
+        let c1;
+        document.getElementsByClassName("demo")[0].innerHTML=typeof "" +"<br>" +typeof 12344 +"<br>"+ typeof c;
+    </script>
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var obj1={
+            name:"sree",
+            age:23,
+            fav:"blue",
+            obj:{
+                name:"roja"
+            }
+           }
+        
+        var obj2={
+           
+            name:"sree",
+            age:23,
+            fav:"blue",
+            obj:{
+                name:"roja"
+            }
+        }
+
+        
+        function AreEqual(obj1,obj2)
+        {
+            if (typeof obj1 !== "object" || typeof obj2 !== "object" || obj1 === null || obj2 === null)
+             {
+                return obj1===obj2;
+            }
+            const keys1=Object.keys(obj1);
+            const keys2=Object.keys(obj2);
+           
+              (keys1.length !== keys2.length)?false:keys1.every(key=>AreEqual(obj1[key],obj2[key]));
+              
+        }
+     
+       console.log(AreEqual(obj1,obj2));
+
+    </script>
+</body>
+</html>

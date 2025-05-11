@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // function Myfun()
+        // {
+        //     console.log("first function");
+        // }
+        // Myfun();
+
+
+
+        // like we are assigning a numer/string to variable we can also assign funtion
+        // let Myfun1=function(param)
+        // {
+        //     console.log("second functuion1" + param);
+        // }
+        // Myfun1(8);
+
+        // var Myfun2=function(param)
+        // {
+        //     console.log("second functuion2" + param);
+        // }
+        // Myfun2(8);
+
+        // const Myfun3=function(param)
+        // {
+        //     console.log("second functuion3" + param);
+        // }
+        // Myfun3(8);
+
+
+
+        //return in function
+        // function returnfun()
+        // {
+        //     return 'adfredfewd';
+        // }
+        // let p=returnfun();
+        // console.log(p);
+
+
+        // function undefinedreturn()
+        // {
+        //     return;
+        // }
+        // console.log(undefinedreturn());
+
+
+        //DEFAULT PARAMETRERS
+        // function defualtPARAM1(a,b)
+        // {
+        //    return a+b;
+        // }
+        // console.log(defualtPARAM1(2,3));     //5
+        // console.log(defualtPARAM1(3));      //NaN bcus 3+undefined=NaN
+
+        // function defualtPARAM(a,b=0)
+        // {
+        //    return a+b;
+        // }
+        // console.log(defualtPARAM(2,3));     //5
+        // console.log(defualtPARAM(3));      //3+0=3
+        
+
+        //REST PARAMETEERS
+        //rest paramter(...y) must be the last parameter + only one for any function
+        // function restFunction(x=0,...y)
+        // {
+        //    console.log(x);
+        //    console.log(y);
+        // }
+        // // restFunction(2,3,5,6,7,8);
+        // restFunction();
+
+
+        //ARROW FUNCTIONS
+        // const arrow=(a,b)=>
+        // {
+        //    return (a+b);
+        // }
+        // console.log(arrow(20,5));
+        
+
+        //NESTED FUNCTIONS
+        // function outer()
+        // {
+        //     console.log("i am outer");
+        //     function inner()
+        //     {
+        //         console.log("i am inner");
+        //     }
+        //     inner();
+        // } 
+
+
+        //CLOSURE
+        // function outer(x)
+        // {
+        //     function inner(y)
+        //     {
+        //         return x+y;
+        //     }
+        //     return inner;
+        // }
+
+        // const output=outer(8);
+        // console.log(output(2));
+        // console.log("sree");
+
+        // function higherorder()
+        // {
+        //     return function()
+        //     {
+        //         console.log("heywde");
+        //     }
+        // }
+        // const f=higherorder();
+        // f();
+
+
+        //pure functions----------for the given input the output doesnt chnage
+        // function greeting(name)
+        // {
+        //     console.log("hello "+name);
+        // }
+        // greeting("sree");
+
+        // impure functions
+        // var greeting="hey";
+        // function greetingf(name)
+        // {
+        //     console.log(greeting +" "+name);
+        // }
+        // greetingf("siva");
+        // greeting="hello";
+        // greetingf("siva");                //for the same input the output chnaged as a side effect of change in greeting so this is impure function.
+
+        //IIFE those functions that run immediately after defining
+        // (
+        //     function()
+        //     {
+        //         console.log("iife");
+        //     }
+        // )();
+    </script>
+</body>
+</html>

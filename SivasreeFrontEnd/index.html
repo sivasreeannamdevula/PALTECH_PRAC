@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *
+        {
+            margin:0;
+            padding:0;
+            box-sizing: border-box;
+        }
+        nav
+        {
+             background-color: black;
+             color:white;
+             padding:8px;
+        }
+        li{
+            list-style: none;
+            padding:9px;
+        
+        }
+
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+        }
+        .search
+        {
+            height:30px;
+            border-radius: 18px;
+            width:300px;
+            padding:7px;
+            box-shadow:0 2px 4px red;
+        }
+
+        .search:hover
+        {
+          
+            background-color:beige; 
+            
+         }
+        
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <input type="text" placeholder="search anything" class="search">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Contact">Contact</a></li>
+            <li><a href="#Learn">Learn</a></li>
+        </ul>
+    </nav>
+</body>
+</html>

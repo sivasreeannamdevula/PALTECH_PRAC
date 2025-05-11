@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //forEach---old array is not modified and we can do operations on each element and print instantly
+        let arr=[1,3,5,7,9,11,13,15];
+        function myfun(val)
+        {
+             //console.log( val*4);
+        }
+        let result=arr.forEach(myfun);
+        //console.log(result);        //here result=undefined
+
+
+        
+        //Map  creates a new array with the modifications provided in the function
+         let brr=[2,4,6,8,10];
+         let crr=brr.map(myMap);
+        function myMap(val)
+        {
+            return val*2;
+        }
+        //console.log(crr);           //here crr is the new array with the modifications
+
+
+       //flatMap()   creats a new array
+       let drr=[2,3,4];
+       function flatM(val)
+       {
+          return [val,val*3,val*2];
+       }
+       let err=drr.flatMap(flatM,2);
+       console.log(err);
+
+
+      //filter creates a new array with the elements that satisfies the condition
+      let frr=[1,2,3,4,5,6];
+      function condition(val)
+      {
+        return val>3;
+      }
+      let res=frr.filter(condition);
+      //console.log(res);
+
+
+      
+      //reduce used to reduce to single value from left-to-right
+      //reduceright --same as reduce but traverses from right-to-left
+      let rrr=[1,23,4];
+      function rest(val,sum)
+      {
+        return  sum+val;
+      }
+      let resu=rrr.reduce(rest,2);        //2 is the initial value for sum
+      //console.log(resu);
+
+
+      //every() checks whether every element passes the condition
+      //some()  checks whther some elements passes the condition
+      let evrr=[12,13,14,15];
+      function check(val)
+      {
+        return val>14;
+      }
+     //console.log(evrr.every(check));
+     //console.log(evrr.some(check));
+
+     //from()   returna an array from the given input object
+     let output=Array.from("sree");
+     //console.log(output);
+
+     let r=output.keys();
+    
+    //  for(let i of r)
+    //  {
+    //     console.log(i);
+    //  }
+     let rs=output.entries();
+    //  for(let rss of rs)
+    //  {
+    //     console.log(rss);
+    //  }
+
+
+     //with creates the new array with the chnages
+     let newarr=["sr","siva"];
+     let chnagednewarr=newarr.with(0,"sree");
+     //console.log(chnagednewarr);
+
+
+     //spread operator
+     const s1=['a','b','c','d'];
+     const s2=['e','f','g'];
+     const s3=['h','i','j'];
+     const combined=[...s1, ...s2, ...s3];
+     //console.log(combined);
+
+    </script> 
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+       
+        
+//      function fetchData() {
+//         return new Promise((resolve) => {
+//         setTimeout(() => {
+//             resolve("Data fetched!");
+//         }, 2000); 
+//     });
+// }
+
+
+// async function getData() {
+//     try
+//      {
+//         console.log("Fetching data...");
+//         const data = await fetchData(); 
+//         console.log(data); 
+//     }
+//     catch (error) {
+//         console.error("Error:", error);
+//     }
+//     finally{
+//         console.log("finally");
+//     }
+// }
+// getData();
+
+
+
+function fetchUser () {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve({ id: 1, name: "Alice" });
+        }, 1000);
+    });
+}
+
+function fetchPosts(userId) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve([{ id: 1, title: "title1" }, { id: 2, title: "title2" }]);
+        }, 1000);
+    });
+}
+
+async function getUser() 
+{
+    try {
+        const user = await fetchUser (); 
+        console.log("User :", user);
+        
+        const posts = await fetchPosts(user.id); 
+        console.log("Posts:", posts);
+    } catch (error) {
+        console.error("Error:", error);
+    }
+}
+
+ getUser();
+</script>
+</body>
+</html>

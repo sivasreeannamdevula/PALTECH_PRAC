@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container
+        {
+            display:flex;
+            flex-direction: row;
+            background-color: yellow;
+            height:400px;
+        }
+
+        img{
+            height:200px;
+            width:300px;
+        }
+
+        .secondcontainer
+        {
+            display:flex;
+            flex-direction: column;
+        }
+
+        .text
+        {
+            background-color: pink;
+            height:50px;
+            width:200px;
+            border:2px solid black;
+            margin:10px;
+        }
+
+        @media (max-width:640px)
+        {
+             .container
+             {
+                flex-direction:column;
+             }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="secondconatainer">
+            <div class="text">I am text1</div>
+            <div class="text">I am text2</div>
+        </div>
+        <div><img src="image.jpg" alt="not found"/></div>
+    </div>
+</body>
+</html>

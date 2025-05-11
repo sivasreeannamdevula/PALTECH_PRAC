@@ -1,0 +1,44 @@
+/* all anchor tags that has target attribute */
+a[target]
+{
+   color:pink;
+   font-size:30px;
+}
+
+/* all anchor tags that has the target value as _self */
+a[target=_Self]
+{
+    color:yellow;
+}
+
+/*href that contains space seperated css*/
+a[class~="css"]
+{
+    color:black;
+}
+
+/*href that is followed by hyphen(https-,https)*/
+a[class|="css"]
+{
+    color:blueviolet;
+}
+
+
+
+/*Start with https*/
+/* a[href^="https"]
+{
+    color:black;
+} */
+
+/*Ends with .io*/
+/* a[href$=".io/"]
+{
+    color:blue;
+} */
+
+/*contains www.*/
+/* a[href*="www"]
+{
+    color:orange;
+} */

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            height:100px;
+            width:200px;
+            /* filter:saturate(0);
+            filter:saturate(10%);
+            filter:saturate(100%); */
+
+            /* converts an image to sepia (a warmer, more brown/yellow color)
+            100%-complete sepia,0%-no effect */
+            filter: sepia(30%);
+            filter: sepia(80%);
+           }
+        
+        div
+        {
+            background-color: yellow;
+            height:100px;
+            width:200px;
+            margin:20px;
+
+            /* position:relative is necessary for steps function */
+            position:relative;
+            /* sqrt can be used along with calc function */
+            /* width:calc(100px * sqrt(9));
+            border:2px solid black;
+            margin:20px; */
+
+            /* skews the element 15deg along the x-axis and 0 along the y-axis*/
+            /* transform:skew(15deg); */
+            /* skews the element -15deg along the x-axis and 15deg along the y-axis*/
+            /* transform:skew(-15deg,15deg); */
+
+
+            /* skews the element 15deg alomg the x-axis */
+            /* transform:skewX(15deg); */
+
+            /* skews the element 15deg alomg the y-axis */
+            /* transform:skewY(15deg); */
+
+            /* animation:mymove 5s linear; */
+            
+           
+           
+            
+           
+        }
+        .div1
+        {
+            /* total animation duration=5sec,jumps at start,mymove keyframe lo unna animation gets applied */
+            animation:mymove 5s steps(8,start);
+        }
+
+        @keyframes mymove
+        {
+            /* from {left:10px;}
+            to{left:200px;} */
+
+            0% { background-color: red; }
+           12.5% { background-color: orange; }
+           37.5% { background-color: green; }
+           25% { background-color: yellow; }
+           62.5% { background-color: indigo; }
+           50% { background-color: blue; }
+           87.5% { background-color: pink; }
+           75% { background-color: violet; }
+           100% { background-color: red; }
+        }
+
+        .div2
+        {
+            /* width along x-axis and height along y-axis */
+            /* transform:scale(20%,90%); */
+
+            /* sx	A positive or negative number that defines the scaling vector for the width
+            sy	A positive or negative number that defines the scaling vector for the height
+            sz	A positive or negative number that defines the scaling vector for the z direction */
+            /* transform: scale3d(10%,20%,30%);
+
+            transform:scaleX(10%);
+            transform:scaleY(30%) */
+            animation:mymove 5s steps(8,end);
+        }
+    </style>
+</head>
+<body>
+    <img src="image.jpg" alt="not found" />
+    <div class="div1">Hello Rajasab</div>
+    <div class="div2">Hello Rajasab</div>
+</body>
+</html>

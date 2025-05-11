@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Sorts</h1>
+    <script>
+
+        //SORT(),REVERSE()
+        //each element is converted to string so first we get 1000
+        let arr=[99,98,96,95,8,3,1000];
+        arr.sort();
+        //console.log(arr);
+        arr.reverse();
+        //console.log(arr);
+
+
+        //to sort numerically
+        arr.sort(function(a,b){
+            return a-b;
+        })
+        //console.log(arr);
+       
+
+        //using toSorted,toReversed the original array is not changed instead a new array is created
+        let brr=[90,889,3,239,3209,38];
+        //console.log(brr.toSorted());
+        //console.log(brr);
+
+        //random sort
+        let crr=[23,43,5,2,36,7];
+        crr.sort(function(a,b){
+            return 1.2-Math.random();
+        });
+        //console.log(crr);
+
+
+        //min,max element of an array
+       // console.log(Math.min.apply(null,crr));
+        //console.log(Math.max.apply(null,crr));
+
+
+        //sorting object arrays
+        let orr=[
+            {name:"siva",age:32},
+            {name:"sree",age:20},
+            {name:"venkata",age:67},
+            {name:"sai",age:20}
+        ]
+        // console.log(orr.sort(function(a,b)
+        // {
+        // return a.age-b.age;
+        // }));
+
+        //to sort according to strings
+        // console.log(orr.sort(
+        //     function(a,b)
+        //   {
+        //    if(a<b)
+        //    {return -1;}
+        //    if(a>b){
+        //     return 1;
+        //    }
+        //    return 0;
+        //   }
+        // ));
+
+
+        //fill method
+        const s=["abcd","efgh","ijkl","mnop","qrst","uvwx","yz"];
+        s.fill("filled");   //replaces all the array elements with filled
+        s.fill("new",2,6);  //replaces the elements from index 2 to 6-1 with new
+        console.log(s);
+    </script>
+</body>
+</html>

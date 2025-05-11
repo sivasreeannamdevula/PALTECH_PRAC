@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+       var obj1={
+            name:"sree",
+            age:23,
+            add:function()
+            {
+                console.log("addition of two values");
+            }
+        }
+
+        //accessing object methods
+        //console.log(obj1.add);       //returns function definition
+        //console.log(obj1.add());
+
+        //adding new method
+        obj1.newfun=function()
+        {
+            console.log("new function added");
+        }
+
+        //console.log(obj1.newfun());
+       // console.log(obj1.name.toUpperCase());
+
+
+        //DISPLAY OBJECTS
+        //console.log(obj1);
+        document.getElementById("demo").innerHTML=obj1;      //returns [object Object]
+        
+        //to display correctly 
+        document.getElementById("demo").innerHTML=obj1.name + "age is " +obj1.age;
+       
+        //by looping we can access properties
+        for(let x in obj1)
+        {
+            console.log(obj1[x]);
+        }
+
+        // const arraymy=Object.values(obj1);
+        // console.log(arraymy);
+        // for(let [key , value] of Object.entries(obj1))
+        // {
+        //     console.log(key+" "+value);
+        // }
+
+        const str=JSON.stringify(obj1);
+        console.log(str);
+    </script>
+</body>
+</html>

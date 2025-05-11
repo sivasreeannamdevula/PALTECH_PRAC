@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         div
+         {
+            width:90px;
+            height:90px;
+            background-color: yellow;
+            /* acos function is inverse of cos
+            it takes input in the range (-1,1) and returns an angle btw 0-180
+            if other than (-1,1) is given then it returns NaN */
+            transform:rotate(acos(0.8));
+
+            /* asin function is inverse of sin
+            it takes input in the range (-1,1) and returns an angle btw -90 to 90
+            if other than (-1,1) is given then it returns NaN */
+            transform:rotate(asin(-1));
+
+
+            /* atan function is inverse of tan
+            it takes input in the range (-infinity,infinity) and returns an angle btw -90 to 90
+           */
+           transform:rotate(atan(-1));
+
+            /* atan2 function is inverse of tan of 2 values
+            it returns an angle btw -180 to 180
+            (-infinity,infinity)
+           */
+           transform:rotate(atan2(10,80));
+           transform:rotate(atan2(20%,80%));
+           transform:rotate(atan2(10px,80px));
+
+
+           /* as the below functions return a value btw a range that gets multiplied */
+           width:calc(100px * cos(30 deg));
+           width:calc(100px * sin(30 deg));
+           width:calc(100px * tan(30 deg));
+         }
+    </style>
+</head>
+<body>
+    <div>Hello world</div>
+</body>
+</html>

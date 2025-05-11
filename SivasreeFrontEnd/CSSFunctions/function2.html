@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root
+        {
+            /* declare one variable and use it wherever needed,it is like a variable */
+            --main-clor:green;
+        }
+        div
+        {
+            color:white;
+            margin:2px;
+            background-color: var(--main-clor);
+
+            /* for the div element we can add background-image using the url */
+            background-image: url(image.jpg);
+
+           /* the div element is moved 40px alomg x-axis, 20px along y-axis */
+            transform:translate(40px,80px);
+
+            /* moves the elemnt along the X-axis */
+            transform:translateX(-40px);
+            transform:translateX(40px);
+
+            /* moves the elemnt along the Y-axis */
+            transform:translateY(-40px);
+            transform:translateY(-40px);
+        }
+    </style>
+</head>
+<body>
+    <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Officiis ratione voluptas incidunt! Aperiam
+         cum temporibus quis voluptatibus enim at eius a atque aut?</div>
+
+    <div>Lorem, ipsum dolor.</div>
+
+</body>
+</html>

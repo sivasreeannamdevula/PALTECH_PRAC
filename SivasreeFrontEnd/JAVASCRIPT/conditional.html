@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>CONDITIONALS</h1>
+    <p class="demo"></p>
+    <script>
+        let x=67;
+        let b=true;
+        if(x<20 || !b)
+       {
+          document.getElementsByClassName("demo")[0].innerHTML=x + "if";
+       }
+       else if(x>20 && x<50)
+       {
+        document.getElementsByClassName("demo")[0].innerHTML=x + "else";
+       }
+       else if(x==20 || (x>50 && x<60))
+       {
+         document.getElementsByClassName("demo")[0].innerHTML="EQUAL";
+       }
+       else
+       {
+        document.getElementsByClassName("demo")[0].innerHTML="MORE";
+       }
+    </script>
+</body>
+</html>
+
+
+<!-- SHORT-CIRCUIT -->
+ <!-- if in && first expression is false then the second expression is not evaluated -->
+  <!-- in || if the first expression is true then the second expression is not evaluated -->

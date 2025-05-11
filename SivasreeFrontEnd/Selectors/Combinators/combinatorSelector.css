@@ -1,0 +1,24 @@
+/* descendent combinator(space) means all the next generations(div lopala unna every p tag gets yellow colour) */
+div p
+{
+    background-color: yellow;
+}
+
+/* child combinator(>) : means direct childs*/
+ div>p
+{
+    background-color: red;
+}
+
+/*Next sibling(+): selects the <p> element that occurs immediately after closing div(</div>) 
+div and p must have the same parent as we r saying siblings*/
+ div + p
+{
+    background-color: pink;
+} 
+
+/* subsequent-sibling combinator(~):selects all the next siblings (<p>) of closing </div>  */
+div ~ p
+{
+    background-color: blue;
+}

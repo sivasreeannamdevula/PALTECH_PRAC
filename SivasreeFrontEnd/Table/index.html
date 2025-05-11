@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <table border="1">
+        <!-- to give the caption for any table we can use this tag -->
+        <caption style="caption-side: bottom; text-align: left;">INDEX TABLE</caption>
+        <!-- to apply styles for a group of columns at a go instead of each cell,we can use <column> tag -->
+        <colgroup>
+            <col span="2" style="background-color: red;">
+            <col span="2" style="background-color: yellow;"
+        </colgroup>
+       <thead>
+            <th>Student ID</th>
+            <th>Std Name</th>
+            <th>Gender</th>
+            <th>Age</th>
+       </thead>
+       <tbody>
+            <tr>
+                <td>100</td>
+                <td colspan="3">Siva</td>
+                
+            </tr>
+            <tr>
+                <td>101</td>
+                <td>Sree</td>
+                <td>Female</td>
+                <td rowspan="3">10</td>
+            </tr>
+            <tr>
+                <td>102</td>
+                <td>SS</td>
+                <td>Male</td>
+                
+            </tr>
+            <tr>
+                <td>103</td>
+                <td>AVSS</td>
+                <td>Male</td>
+                
+            </tr>
+       </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="age">
+    <button onclick="func()">Click me</button>
+    <p id="agess"></p>
+    <script>
+        function func()
+        {
+            let age=document.getElementById("age").value;
+            let text=age>18?"eligible to vote":"nooo";
+            document.getElementById("agess").innerHTML=text;
+        }
+    </script>
+</body>
+</html>

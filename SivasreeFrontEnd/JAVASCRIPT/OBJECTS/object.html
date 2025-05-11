@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      //object creation 
+      //1.literal
+      const obj1=
+      {
+         name:"sivasree",
+         age:21,
+         favcolor:"black",
+         wakeup:function()
+         {
+           console.log("wake up!! its already 9 a.m");
+         }
+      }
+
+      const obj2={};
+      obj2.name="siva";
+      obj2.age=21;
+      obj2.newprop="newprop";
+
+      //2.using new keyword
+      const obj3=new Object();
+      obj3.name="sree";
+      obj3.age=24;
+      obj3.newprop1="newprop1";
+
+      //accessing object properties
+      console.log(obj1["name"]);
+      console.log(obj1.favcolor);
+      console.log(obj1.wakeup());
+     
+      //primitives are immuatble (string,boolean,bigint,undefined,null,number,symbol) i.e
+      //if x=2.3 and then we reassign x=3 then actually again a new x is memory allocated
+
+      //objects are mutable i.e; when we assignn the existing object to new variable then 
+      //new object just references to the already existing object rather than creating a new object
+    </script>
+</body>
+</html>

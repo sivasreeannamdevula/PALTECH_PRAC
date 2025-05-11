@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script type="module">
+        import _ from 'https://cdn.jsdelivr.net/npm/lodash-es/lodash.min.js';
+ 
+ 
+        const objA = { a:1, b: 2 };
+        const objB = { b:2, a: 1 };
+
+        const obj1 = { a:1, b: 2, c:undefined };
+        const obj2 = { b:2, a: 1 };
+ 
+        console.log(_.isEqual(objA, objB));
+        console.log(_.isEqual(obj1,obj2));
+
+        const k=obj1.Values();
+        console.log(k);
+    </script>
+</body>
+</html>

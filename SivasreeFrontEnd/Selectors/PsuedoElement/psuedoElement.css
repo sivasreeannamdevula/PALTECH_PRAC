@@ -1,0 +1,33 @@
+/* both first-line and first-letter can be applied for BLOCK Elements only */
+p::first-line
+{
+    color:pink
+}
+
+p::first-letter
+{
+    color:red;
+    font-size: 100px;
+}
+
+p::before
+{
+   content:"sijd";
+}
+
+p::after
+{
+    content:url(C:\SivasreeFrontEnd\Form\image.jpg);
+    content:"owidsukgjxc"
+}
+
+::marker
+{
+    color:green;
+}
+
+::selection
+{
+    color:blue;
+    background-color: yellow;
+}

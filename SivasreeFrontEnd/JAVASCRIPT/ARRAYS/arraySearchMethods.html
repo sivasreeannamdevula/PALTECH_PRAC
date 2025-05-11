@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr=["P","A","T","L","T","E","C","H","T",NaN,"kl"];
+        //INDEXOF
+        //returns the first occurence
+        //console.log(arr.indexOf("T"));
+        //here we are telling to search from index=6, as it is not found we are getting -1
+        //console.log(arr.indexOf("T",6));
+
+
+        
+        //LASTINDEXOF
+        //console.log(arr.lastIndexOf("T"));
+        //console.log(arr.lastIndexOf("T",9));
+
+        
+        //includes---it also works for NaN unlike indexOf
+        //console.log(arr.includes("P"));
+        //console.log(arr.includes(NaN));
+        //console.log(arr.indexOf(NaN));
+
+        
+        //find--returns the first element that passes the function condition
+       // console.log(arr.find(myfun));
+        function myfun(value,index,arr)
+        {
+            return value>"A";
+        }
+
+
+        //findIndex---same as find but find returns value findindex returns index
+       // console.log(arr.findIndex(myfun));
+
+       //same as find,findindex but searches from the end of an array
+        console.log(arr.findLast(myfun));
+        console.log(arr.findLastIndex(myfun));
+    </script>
+</body>
+</html>

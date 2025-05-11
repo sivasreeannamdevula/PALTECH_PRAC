@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- to use google fonts add link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&display=swap" rel="stylesheet">
+    <style>
+       p.four
+       {
+          /* normal font-style is default */
+          font-style:normal;
+          font-style:italic;
+          font-style:oblique;
+
+
+          /* font-variant:noraml is defualt i.e; 
+          letters ela untte alane display chesthahdi*/
+          font-variant:normal;
+        /* all smalls are converted to capital letters */
+          font-variant:small-caps;
+
+          font-weight:normal;
+          font-weight:bold;
+          font-weight:bolder;
+          font-weight:lighter;
+          font-weight:900;
+
+
+          font-size:medium;
+          font-size:large;
+          font-size:larger;
+          font-size:x-large;
+          font-size:xx-large;
+          font-size:small;
+          font-size:smaller;
+          font-size:x-small;
+          font-size:xx-small;
+          font-size:80px;
+          /* percent of parents font-size */
+          font-size:100%;
+
+          /* gap between the lines */
+          line-height: normal;
+          line-height: 8px;
+
+        
+          /* WEB SAFE FONTS: the fonts that are installed on the browser, sometimes these fonts are not found
+           or not installed properly that is why we shouls use fallback system
+
+          fallback system,if first fonts are not available then goes for the next available font
+          sans-serif,serif,monospace,cursive,fantasy etc...are called generic family */
+          font-family:Arial, Helvetica, sans-serif;
+
+           /* GOOGLE FONTS */
+           font-family: "Playwrite VN" ,serif;
+
+
+          /* shorthand notation of font-style,font-variant,font-weight,font-size,font-family */
+          /* font:italic small-caps 30px/19px georgia;  */
+
+          /* someother values for the font */
+          font:caption;
+          font:icon;
+          font:menu;
+          font:message-box;
+          font:small-caption;
+          font:status-bar;
+
+         
+       }
+
+     
+       
+       p.six
+       {
+
+         /* smcp=smallcaps */
+        /* font-feature-settings:"smcp" on; */
+        /* observe first letter diff for both (smcp on) and (c2sc,smcp) */
+        /* c2sc=capitals to smallcaps */
+        /* font-feature-settings:"c2sc", "smcp"; */
+
+        /* 1 means enabeled */
+        font-feature-settings: "frac" 1;
+        
+       }
+       
+       p.seven
+       {
+        /* space between letters */
+        font-kerning: none;        /*disabling kerning*/
+        font-kerning: auto;        /*uses built-in kerning algo to adjust the spaces*/
+
+        
+       }
+
+
+
+    
+
+    </style>
+</head>
+<body>
+    <p class="four">Lorem ipsum <br>dolor sit.</p>
+    <p class="five">Lorem ipsum dolor sit amet.</p>
+    <p class="six">Lorem ipsum dolor sit amet consectetur 54/56.</p>
+    <p class="seven">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="seven1">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p class="eight">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+</body>
+</html>

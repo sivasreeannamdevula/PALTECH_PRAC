@@ -1,0 +1,42 @@
+
+/* not visited */
+a:link
+{
+    color:green;
+}
+
+/*visited*/
+a:visited
+{
+    color:red;
+}
+
+/*on hovering*/
+a:hover
+{
+    color:yellow;
+}
+
+/*mouse click chesi pattukuntte we can see black*/
+a:active
+{
+    color:black;
+}
+
+/*first <p> of every parent*/
+p:first-child
+{
+    background-color: pink;
+}
+
+/* prathi <p> lo first <b> gets styled */
+p b:first-child
+{
+    color:blue;
+}
+
+/* prathi first child <p> lo all <b> gets applied in that <p> tag */
+p:first-child b
+{
+    color:orange;
+}

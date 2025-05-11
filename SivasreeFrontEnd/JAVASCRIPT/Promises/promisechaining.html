@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const fun1=()=>
+           {
+               return new Promise((resolve,reject)=>
+               {
+                if(true)
+               {
+                 const data={name:"sree1" , age:22}
+                resolve(data)
+               }
+               else
+               {
+                reject("failed")
+               }
+               })
+           }
+
+    const fun2=()=>
+    {
+        return new Promise((resolve,reject)=>
+    {
+        if(true)
+    {
+        const data2={name2:"sree2", age2:33}
+        resolve(data2)
+    }
+    else
+    {
+        resolve("falied")
+    }
+    })
+    }
+
+    const fun3=()=>
+    {
+        return new Promise((resolve,reject)=>
+    {
+        if(true)
+    {
+        const data2={name2:"sree3", age2:43}
+        resolve(data2)
+    }
+    else
+    {
+        resolve("falied")
+    }
+    })
+    }
+
+    
+    fun1().then(data=>
+    {
+        console.log(data);
+        return fun2();
+      
+    }
+    ).then(data2=>
+    {
+        console.log(data2);
+        return fun3();
+    }
+    ).then(data3=>
+    {
+        console.log(data3);
+    }
+    )
+    .catch(err=>
+    {
+        console.log(err);
+    }
+    )
+
+    </script>
+</body>
+</html>
